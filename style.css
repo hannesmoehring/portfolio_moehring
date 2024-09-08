@@ -1,0 +1,35 @@
+/* Custom styles for the portfolio */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll-bar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom color classes */
+.bg-primary {
+    background-color: #3B82F6;
+}
+
+.bg-secondary {
+    background-color: #10B981;
+}
+
+.bg-accent {
+    background-color: #F59E0B;
+}
+
+.text-primary {
+    color: #3B82F6;
+}
+
+.text-primary-dark:hover {
+    color: #2563EB;
+}
+
+/* Add any additional custom styles here */
