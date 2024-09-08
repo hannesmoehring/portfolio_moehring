@@ -1,5 +1,7 @@
 /* Custom styles for the portfolio */
-
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scroll-bar::-webkit-scrollbar {
     display: none;
@@ -100,3 +102,146 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Add any additional custom styles here */
+
+/* Custom styles for the portfolio */
+
+/* ... (existing styles) ... */
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+.dark-mode .bg-white {
+    background-color: #2d3748;
+}
+
+.dark-mode .bg-gray-100 {
+    background-color: #4a5568;
+}
+
+.dark-mode .text-gray-600 {
+    color: #cbd5e0;
+}
+
+/* Sticky navigation */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 0.5rem 0; /* Reduced padding */
+}
+
+.dark-mode .sticky-nav {
+    background-color: rgba(26, 32, 44, 0.9);
+}
+
+.nav-link {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    padding: 0.5rem 0.75rem; /* Adjusted padding */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3B82F6; /* Primary color on hover */
+}
+
+.nav-brand {
+    font-size: 1.25rem; /* Slightly smaller than before */
+    font-weight: bold;
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+/* Back to Top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3B82F6;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+}
+
+.dark-mode .back-to-top {
+    background-color: #4299e1;
+}
+
+
+/* Custom styles for the portfolio */
+
+/* ... (existing styles) ... */
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+.dark-mode .bg-white {
+    background-color: #2d3748;
+}
+
+.dark-mode .bg-gray-100 {
+    background-color: #4a5568;
+}
+
+.dark-mode .text-gray-600 {
+    color: #cbd5e0;
+}
+
+/* New styles for dark mode text */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p {
+    color: #e2e8f0;
+}
+
+.dark-mode .text-primary {
+    color: #63b3ed; /* A lighter shade of blue for better contrast in dark mode */
+}
+
+.dark-mode .hover:text-primary-dark:hover {
+    color: #90cdf4; /* An even lighter shade for hover state */
+}
+
+/* Ensure links are visible in dark mode */
+.dark-mode a {
+    color: #63b3ed;
+}
+
+.dark-mode a:hover {
+    color: #90cdf4;
+}
+
+/* Adjust background colors for sections in dark mode */
+.dark-mode .bg-white,
+.dark-mode .bg-gray-100 {
+    background-color: #2d3748;
+}
+
+/* ... (rest of the existing styles) ... */

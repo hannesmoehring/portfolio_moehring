@@ -51,3 +51,82 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // You can add more JavaScript functionality as needed
+
+// JavaScript for the portfolio
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (existing code) ...
+
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+    });
+
+    // Check for saved dark mode preference
+    if (localStorage.getItem('darkMode') === 'true') {
+        body.classList.add('dark-mode');
+    }
+
+    // Sticky navigation
+    const nav = document.querySelector('.sticky-nav');
+    const navTop = nav.offsetTop;
+
+    function stickyNavigation() {
+        if (window.scrollY >= navTop) {
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove('sticky');
+        }
+    }
+
+    window.addEventListener('scroll', stickyNavigation);
+
+    // Back to Top button
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ... (existing code) ...
+
+    // Auto-hide navigation
+    const nav = document.querySelector('.sticky-nav');
+    let lastScrollTop = 0;
+    const navHeight = nav.offsetHeight;
+
+    function handleNavigation() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > lastScrollTop && scrollTop > navHeight) {
+            // Scrolling down & past the navbar
+            nav.classList.add('nav-hidden');
+        } else {
+            // Scrolling up
+            nav.classList.remove('nav-hidden');
+        }
+        
+        lastScrollTop = scrollTop;
+    }
+
+    window.addEventListener('scroll', handleNavigation);
+
+    // ... (rest of the existing code) ...
+});

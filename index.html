@@ -8,8 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100">
+
+  <nav class="sticky-nav">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button id="darkModeToggle" class="ml-4 hover-effect">🌓</button>
+        </div>
+    </div>
+</nav>
+
     <!-- Hero Section -->
-    <section class="section h-screen flex items-center justify-center bg-primary parallax" style="background-image: url('hero-background.jpg');">
+    <section id="home" class="section h-screen flex items-center justify-center bg-primary parallax" style="background-image: url('hero-background.jpg');">
       <div class="text-center fade-in">
           <div class="w-64 h-64 mx-auto mb-8 rounded-full bg-white overflow-hidden">
               <img src="portrait.png" alt="Your Photo" class="w-full h-full object-cover">
@@ -20,7 +34,7 @@
   </section>
 
     <!-- About Me Section -->
-    <section class="section py-20 bg-white">
+    <section id="about" class="section py-20 bg-white">
       <div class="container mx-auto px-4 fade-in">
           <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -34,7 +48,7 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="section py-20 bg-gray-100">
+    <section id="experience" class="section py-20 bg-gray-100">
       <div class="container mx-auto px-4 fade-in">
           <h2 class="text-3xl font-bold mb-12 text-center">Education & Experience</h2>
             <div class="relative wrap overflow-hidden p-10 h-full">
@@ -121,7 +135,7 @@
     </section>
 
     <!-- Projects Carousel -->
-    <section class="section py-20 bg-white">
+    <section id="projects" class="section py-20 bg-white">
       <div class="container mx-auto px-4 fade-in">
           <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
     
@@ -163,7 +177,7 @@
     </section>
 
     <!-- Skills Section -->
-    <<section class="section py-20 bg-gray-100">
+    <section id="skills" class="section py-20 bg-gray-100">
       <div class="container mx-auto px-4 fade-in">
           <h2 class="text-3xl font-bold mb-12 text-center">My Skills</h2>
           
@@ -247,7 +261,7 @@
       </section>
 
     <!-- Contact Section -->
-    <section class="section py-20 bg-white">
+    <section id="contact" class="section py-20 bg-white">
       <div class="container mx-auto px-4 fade-in">
           <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
           <div class="max-w-md mx-auto">
@@ -261,6 +275,8 @@
           </div>
       </div>
   </section>
+
+    <div id="backToTop" class="back-to-top">↑</div>
 
     <script src="script.js"></script>
 </body>
